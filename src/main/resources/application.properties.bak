@@ -3,9 +3,7 @@ spring.application.name=prueba-mantenedor1-ms
 server.port=8082
 
 ################ Configuracion BD POSTGRES Local ##################
-spring.datasource.url=jdbc:postgresql://localhost:5432/db_springboot_cloud
-spring.datasource.username=postgres
-spring.datasource.password=sasa
+
 
 spring.datasource.driver-class-name=org.postgresql.Driver
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL95Dialect

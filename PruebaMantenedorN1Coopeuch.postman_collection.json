@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "dd364f18-8558-49aa-b4f3-c29dbb5fcf84",
+		"name": "PruebaMantenedorN1Coopeuch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AgregarTarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\":\"Descripcion tarea 1\",\r\n    \"vigente\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/tarea/agregarTarea",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"tarea",
+						"agregarTarea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTarea",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/tarea/listarTareas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"tarea",
+						"listarTareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarTarea",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"identificador\": 1,\r\n        \"descripcion\": \"Nueva 2 Descripcion tarea 1\",\r\n        \"vigente\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/tarea/editarTarea",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"tarea",
+						"editarTarea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarTarea",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
