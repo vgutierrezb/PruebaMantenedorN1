@@ -1,0 +1,7 @@
+CREATE TABLE tarea
+(
+    identificador SERIAL PRIMARY KEY,
+    descripcion character varying(200),
+    fecha_creacion timestamp without time zone,
+    vigente boolean
+)
